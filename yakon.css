@@ -1,0 +1,160 @@
+@charset "UTF-8";
+body {
+  line-height: 1.5;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 980px;
+  margin: auto;
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*----------header----------*/
+header {
+  padding: 20px 0;
+  background-image: url(./images/bule.jpeg);
+}
+
+.header-left {
+  float: left;
+}
+
+
+.header-right {
+  float: right;
+}
+
+.header-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header-nav-item {
+  float: left;
+  margin-left: 50px;
+}
+
+.header-nav-item a {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 36px;
+}
+
+/*----------section----------*/
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/*----------top----------*/
+.top {
+  padding: 80px 0;
+}
+/*----------about----------*/
+.about-left {
+  float: left;
+  width: 48%;
+}
+
+.about-right {
+  float: right;
+  width: 48%;
+}
+
+
+/*----------footer----------*/
+footer {
+  background-color: #082b48;
+  color: white;
+  padding: 20px 0;
+}
+
+.copyright {
+  font-size: 12px;
+  float: right;
+  margin-right: 30px;
+}
+
+/*スマホ用の表示*/
+@media only screen and (max-width: 767px) {
+/*----------header----------*/
+  .header-title {
+    text-align: center;
+  }
+  .header-left {
+    float: none;
+  }
+  .header-right {
+    float: none;
+  }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-nav-item {
+    float: none;
+    margin: 0%;
+  }
+  /*----------footer----------*/
+  .copyright {
+    font-size: 10px;
+    float: none;
+    text-align: center;
+    margin-right: 0;
+  }
+  /*----------top----------*/
+  .top {
+    padding: 120px 0;
+  }
+  /*----------section----------*/
+  .section {
+    padding: 80px 0;
+  }
+  .section p {
+    font-size: 14px;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+  /*----------about----------*/
+  .about-left {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .about-right {
+    float: none;
+    width: 100%;
+  }
+  
+}
